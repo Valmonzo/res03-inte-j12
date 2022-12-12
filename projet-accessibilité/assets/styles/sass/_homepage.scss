@@ -86,9 +86,20 @@
         grid-template-columns: 1fr 0.5fr;
 
         & > .article-feed {
+            display:grid;
+
             & > .display-none {
                 display: none;
             }
+
+            & > article:nth-of-type(4) {
+                & > header {
+                    display:flex;
+                    justify-content:space-between;
+                    height:40vh;
+                }
+            }
+
 
             & > article {
                 border:2px solid RGBa(134, 142, 150, 0.1);
@@ -96,13 +107,36 @@
                 background-color:RGBa(173, 181, 189, 0.1);
                 margin-bottom:3vh;
                 padding-bottom:2vh;
+                box-shadow: 5px 5px 5px 0 rgba(48, 68, 78, 0.1);
 
+                & > .video {
+                        height:40vh;
+                    & > figure {
+                        width:100%;
+                        height:100%;
+
+                        & > figcaption {
+                            display: none;
+                        }
+
+                        & > iframe {
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
 
                 & > .img {
                     height:50vh;
                     overflow:hidden;
 
                     & > figure {
+                        width:100%;
+
+
+                        & > iframe {
+                            width:100%;
+                        }
 
                         & > img {
                             width:100%;
@@ -111,7 +145,7 @@
                 }
 
                 & > .main-article {
-                        padding-top: 2vh;
+                        padding: 2vh 1vw;
 
                     & > header {
                         text-align:center;
@@ -162,6 +196,87 @@
                             text-decoration:underline 8px solid RGB(131, 78, 86);
                         }
                     }
+                }
+            }
+
+
+            & > blockquote {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align:center;
+                border:2px solid RGBa(134, 142, 150, 0.1);
+                background-color:RGBa(173, 181, 189, 0.1);
+                border-radius:15px;
+                padding: 5vh 0;
+                font-size: 1.5em;
+                box-shadow: 5px 5px 5px 0 rgba(48, 68, 78, 0.1);
+                margin: 0vh 0 3vh 0;
+
+                & > span {
+                    background-color:orange;
+                    border-radius:60px;
+                    font-size:1.5em;
+                    padding: 0.5vh 0.5vw;
+
+                }
+
+                & > p {
+                    padding: 3vh 0;
+                    font-weight:bold;
+                }
+
+                & > h4 {
+                    text-transform:uppercase;
+                    font-size:.8em;
+                }
+
+
+            }
+
+            & > .btn-feed {
+                height:6vh;
+                width:10vw;
+                border-radius:10px;
+                background-color:RGBa(131, 78, 86, 0.9);
+                justify-self:center;
+                align-self:center;
+                text-transform:uppercase;
+                font-weight:bold;
+                color:white;
+                font-size:0.9em;
+                border:none;
+                box-shadow: 3px 3px 0 0 rgba(48, 68, 78, 0.3);
+            }
+        }
+
+        & > aside {
+            padding: 0 3vw;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:space-between;
+
+            & > #aside-categories {
+                display: flex;
+                flex-direction: column;
+                width:100%;
+
+                & > header {
+                    padding-bottom:3vh;
+                    & > h2 {
+                        font-size:1.3em;
+                        text-transform:uppercase;
+                        font-weight:bold;
+                    }
+                }
+
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
                 }
             }
         }

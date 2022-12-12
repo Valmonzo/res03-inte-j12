@@ -72,8 +72,16 @@
   display: grid;
   grid-template-columns: 1fr 0.5fr;
 }
+#home > main > .article-feed {
+  display: grid;
+}
 #home > main > .article-feed > .display-none {
   display: none;
+}
+#home > main > .article-feed > article:nth-of-type(4) > header {
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
 }
 #home > main > .article-feed > article {
   border: 2px solid RGBa(134, 142, 150, 0.1);
@@ -81,16 +89,37 @@
   background-color: RGBa(173, 181, 189, 0.1);
   margin-bottom: 3vh;
   padding-bottom: 2vh;
+  box-shadow: 5px 5px 5px 0 rgba(48, 68, 78, 0.1);
+}
+#home > main > .article-feed > article > .video {
+  height: 40vh;
+}
+#home > main > .article-feed > article > .video > figure {
+  width: 100%;
+  height: 100%;
+}
+#home > main > .article-feed > article > .video > figure > figcaption {
+  display: none;
+}
+#home > main > .article-feed > article > .video > figure > iframe {
+  width: 100%;
+  height: 100%;
 }
 #home > main > .article-feed > article > .img {
   height: 50vh;
   overflow: hidden;
 }
+#home > main > .article-feed > article > .img > figure {
+  width: 100%;
+}
+#home > main > .article-feed > article > .img > figure > iframe {
+  width: 100%;
+}
 #home > main > .article-feed > article > .img > figure > img {
   width: 100%;
 }
 #home > main > .article-feed > article > .main-article {
-  padding-top: 2vh;
+  padding: 2vh 1vw;
 }
 #home > main > .article-feed > article > .main-article > header {
   text-align: center;
@@ -133,6 +162,74 @@
 #home > main > .article-feed > article > .main-article > footer > a {
   color: black;
   text-decoration: underline 8px solid RGB(131, 78, 86);
+}
+#home > main > .article-feed > blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 2px solid RGBa(134, 142, 150, 0.1);
+  background-color: RGBa(173, 181, 189, 0.1);
+  border-radius: 15px;
+  padding: 5vh 0;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  margin: 0vh 0 3vh 0;
+}
+#home > main > .article-feed > blockquote > span {
+  background-color: orange;
+  border-radius: 60px;
+  font-size: 1.5em;
+  padding: 0.5vh 0.5vw;
+}
+#home > main > .article-feed > blockquote > p {
+  padding: 3vh 0;
+  font-weight: bold;
+}
+#home > main > .article-feed > blockquote > h4 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+#home > main > .article-feed > .btn-feed {
+  height: 6vh;
+  width: 10vw;
+  border-radius: 10px;
+  background-color: RGBa(131, 78, 86, 0.9);
+  justify-self: center;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9em;
+  border: none;
+  box-shadow: 3px 3px 0 0 rgba(48, 68, 78, 0.3);
+}
+#home > main > aside {
+  padding: 0 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#home > main > aside > #aside-categories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#home > main > aside > #aside-categories > header {
+  padding-bottom: 3vh;
+}
+#home > main > aside > #aside-categories > header > h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#home > main > aside > #aside-categories > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
