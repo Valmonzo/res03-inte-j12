@@ -1,0 +1,192 @@
+#home {
+  font-family: "DM Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
+  height: 100%;
+}
+#home > header {
+  height: 8vh;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+#home > header > h1 {
+  display: none;
+}
+#home > header > section {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#home > header > section > figure > img {
+  width: 25%;
+}
+#home > header > section > nav {
+  padding-right: 16vw;
+}
+#home > header > section > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home > header > section > nav > ul > li {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 1.5vw;
+}
+#home > header > section > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+#home > header > section > ul {
+  display: flex;
+  height: 100%;
+  width: 5vw;
+  align-items: center;
+  justify-content: space-between;
+}
+#home > header > section > ul > li {
+  width: 10vw;
+  font-size: 1.3em;
+  padding: 0 0.5vW;
+}
+#home > header > section > ul > li:first-of-type {
+  border-right: 1px solid rgba(48, 68, 78, 0.3);
+  padding-right: 1vw;
+}
+#home > header > section > ul > li:nth-of-type(2) {
+  padding-left: 1vw;
+}
+#home > main {
+  padding-top: 15vh;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+#home > main > .article-feed > .display-none {
+  display: none;
+}
+#home > main > .article-feed > article {
+  border: 2px solid RGBa(134, 142, 150, 0.1);
+  border-radius: 15px;
+  background-color: RGBa(173, 181, 189, 0.1);
+  margin-bottom: 3vh;
+  padding-bottom: 2vh;
+}
+#home > main > .article-feed > article > .img {
+  height: 50vh;
+  overflow: hidden;
+}
+#home > main > .article-feed > article > .img > figure > img {
+  width: 100%;
+}
+#home > main > .article-feed > article > .main-article {
+  padding-top: 2vh;
+}
+#home > main > .article-feed > article > .main-article > header {
+  text-align: center;
+}
+#home > main > .article-feed > article > .main-article > header > span {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-decoration: underline 4px solid RGB(131, 78, 86);
+}
+#home > main > .article-feed > article > .main-article > header > h3 {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1vh 0;
+}
+#home > main > .article-feed > article > .main-article > header > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+#home > main > .article-feed > article > .main-article > header > ul > li {
+  padding: 0 0.5vw;
+  font-size: 1.2em;
+  color: RGB(131, 78, 86);
+}
+#home > main > .article-feed > article > .main-article > p {
+  font-size: 1.3em;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+#home > main > .article-feed > article > .main-article > footer {
+  text-align: center;
+  padding: 1vh 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+#home > main > .article-feed > article > .main-article > footer > a {
+  color: black;
+  text-decoration: underline 8px solid RGB(131, 78, 86);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
